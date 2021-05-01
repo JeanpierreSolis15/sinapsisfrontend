@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+          <h3>Agregar Usuarios</h3>
+        </div>
+        <div class="card-body">
+          <div>
+            <div class="form-group">
+                <label for="">Nombre Completo:</label>
+                <input type="text" class="form-control" [(ngModel)]="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="">Correo:</label>
+                <input type="email" class="form-control" [(ngModel)]="correo"/>
+            </div>
+            <div class="form-group">
+                <label for="">Dirección:</label>
+                <input type="text" class="form-control" [(ngModel)]="direccion"/>
+            </div>
+            <div class="form-group">
+                <label for="">Teléfono:</label>
+                <input type="number" class="form-control" [(ngModel)]="telefono"/>
+            </div>
+            <div class="form-group">
+                <label for="">Fecha de Nacimiento:</label>
+                <input class="form-control" placeholder="Año/Mes/Día" [(ngModel)]="fecha">
+            </div>
+            <br>
+            <hr>
+            <div style="text-align: center;">
+                <button (click)="Guardar()" class="btn btn-outline-danger btn-lg" style="margin-right: 20px;"> Guardar</button>
+                <button (click)="Cancelar()" class="btn btn-outline-success btn-lg">Cancelar</button>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+</div>

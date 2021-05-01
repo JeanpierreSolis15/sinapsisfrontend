@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="table_css">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Correo</th>
+              <th scope="col">Teléfono</th>
+              <th scope="col">Direccíon</th>
+              <th scope="col">Edad</th>
+              <th scope="col" colspan="3">Acciones</th>
+            </tr>
+          </thead>
+          <tbody  >
+            <tr *ngFor="let item of data_users; let i = index">
+              <th scope="row">{{i}}</th>
+              <td>{{item.NO_USUA}}</td>
+              <td>{{item.EMAIL_USUA}}</td>
+              <td>{{item.MOVIL_USUA}}</td>
+              <td>{{item.DIRECCION_USUA}}</td>
+              <td>{{item.FECHA_NACIMIENTO_USUA}}</td>
+              <td>
+                <button type="button" class="btn btn-primary " (click)="VerUsuario(item.ID_USUA)">Ver</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-warning" (click)="EditarUsuario(item.ID_USUA)">Editar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</div>
+    
